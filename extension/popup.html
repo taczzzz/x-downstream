@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>顺流 · X Downstream</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header><span class="mark">↓</span><div><h1>顺流</h1><span class="subtitle">X DOWNSTREAM</span></div><span class="version">1.2</span></header>
+  <p class="intro">新内容，接在下方。<br>向下读就好。</p>
+  <label class="setting"><span><strong>连续阅读</strong><small>原版界面 · 原生操作 · 自动加载</small></span><input id="enabled" type="checkbox" checked role="switch"><span class="switch" aria-hidden="true"></span></label>
+  <p id="state" role="status">正在读取设置…</p>
+  <button id="clear-read" type="button">清空已读记录</button>
+  <a class="open" href="https://x.com/home" target="_blank" rel="noopener noreferrer">打开 X 首页 <span>↗</span></a>
+  <footer>页面内不添加提示或按钮<br><span>已读保留 30 天 · 每账号最多 5,000 条<br>更改开关会刷新已打开的 X 首页。</span></footer>
+  <script src="popup.js"></script>
+</body>
+</html>

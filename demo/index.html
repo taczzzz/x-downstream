@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>X · 原生界面适配演示</title>
+  <link rel="stylesheet" href="/demo/native.css">
+</head>
+<body>
+  <nav><strong>𝕏</strong><a href="/home" data-testid="AppTabBar_Home_Link">⌂ 首页</a><a href="/explore" id="native-explore">⌕ 探索</a><span>♧ 通知</span><span>✉ 消息</span><span>♡ 书签</span></nav>
+  <main data-testid="primaryColumn">
+    <header><button role="tab" aria-selected="true" data-source="for-you">为你推荐</button><button role="tab" aria-selected="false" data-source="following">正在关注</button></header>
+    <section class="composer"><span class="composer-avatar">你</span><span>有什么新鲜事？</span><button type="button">发布</button></section>
+    <div id="native-feed"></div>
+    <div id="native-loader" aria-label="原生时间线加载区域"><span class="spinner" hidden></span></div>
+  </main>
+  <aside><small>LOCAL DEMO / 合成数据</small><h2>保留页面，改变下刷。</h2><p>这是本地模拟的 X 页面。插件不绘制任何卡片或按钮，只适配返回的数据。</p><p>向下读到末尾，会自动接上下一批。点击推文、回复和喜欢操作均由演示页面自身处理。</p><p>此演示不能替代 X 登录账号的实站验证。</p></aside>
+  <dialog id="native-reply"><form method="dialog"><h3>回复</h3><textarea placeholder="写下你的回复"></textarea><button>关闭</button></form></dialog>
+  <script src="/demo/shim.js"></script>
+  <script src="/extension/page-core.js"></script>
+  <script src="/extension/bridge.js"></script>
+  <script src="/extension/content.js"></script>
+  <script src="/demo/native.js"></script>
+</body>
+</html>

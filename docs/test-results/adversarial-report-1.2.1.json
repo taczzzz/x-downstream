@@ -1,0 +1,113 @@
+{
+  "version": "1.2.1",
+  "fixtureOnly": true,
+  "liveXAccountTested": false,
+  "passed": 26,
+  "failed": 0,
+  "results": [
+    {
+      "name": "abort a queued request immediately without cancelling its predecessor",
+      "passed": true
+    },
+    {
+      "name": "head refresh cannot deadlock behind multiple empty pagination requests",
+      "passed": true
+    },
+    {
+      "name": "account switch fences requests that have not left the queue",
+      "passed": true
+    },
+    {
+      "name": "reopening an in-flight XHR cancels its old callbacks and timeout",
+      "passed": true
+    },
+    {
+      "name": "native connection-loss error retries through the original bottom handler",
+      "passed": true
+    },
+    {
+      "name": "connection-loss text in a composer or dialog never triggers Retry",
+      "passed": true
+    },
+    {
+      "name": "invisible native-looking posted and Retry controls are never clicked",
+      "passed": true
+    },
+    {
+      "name": "posted lookalike in the right sidebar does not trigger a click",
+      "passed": true
+    },
+    {
+      "name": "composer retry does not accidentally submit a post",
+      "passed": true
+    },
+    {
+      "name": "tweet and dialog controls are excluded even when at the end",
+      "passed": true
+    },
+    {
+      "name": "native posted notifier remains visible and waits for the user's own click",
+      "passed": true
+    },
+    {
+      "name": "429 also suppresses native background head refreshes",
+      "passed": true
+    },
+    {
+      "name": "a two-hour server cooldown is not truncated to one hour",
+      "passed": true
+    },
+    {
+      "name": "malformed instructions pass through without crashing the adapter or poisoning the queue",
+      "passed": true
+    },
+    {
+      "name": "HTTP 200 GraphQL errors preserve current cards and allow a later recovery",
+      "passed": true
+    },
+    {
+      "name": "rapid source switches keep native stores and dedup isolated",
+      "passed": true
+    },
+    {
+      "name": "a hung native posted request leaves all manual scrolling native",
+      "passed": true
+    },
+    {
+      "name": "A -> page refresh -> B -> backend sends A again: read A stays filtered, unread A survives",
+      "passed": true
+    },
+    {
+      "name": "A -> native home/X navigation -> B: previously read A is not reseeded",
+      "passed": true
+    },
+    {
+      "name": "A -> user's native posted click -> B: native behavior retained and read A filtered",
+      "passed": true
+    },
+    {
+      "name": "read records never cross account boundaries",
+      "passed": true
+    },
+    {
+      "name": "account switch during a slow load never attributes the old screen's posts to the new account",
+      "passed": true
+    },
+    {
+      "name": "missing readable twid falls back to the native own-profile identity",
+      "passed": true
+    },
+    {
+      "name": "concurrent extension-context writes merge read IDs without losing either writer's records",
+      "passed": true
+    },
+    {
+      "name": "clearing saved read history makes old posts available after refresh",
+      "passed": true
+    },
+    {
+      "name": "read A remains filtered after closing and restarting the actual test browser",
+      "passed": true
+    }
+  ]
+}

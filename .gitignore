@@ -1,0 +1,7 @@
+node_modules/
+.DS_Store
+/test-results/
+/dist/*
+!/dist/x-downstream-1.2.1.zip
+.env
+.env.*

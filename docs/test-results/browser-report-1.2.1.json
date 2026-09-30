@@ -1,0 +1,33 @@
+{
+  "version": "1.2.1",
+  "passed": 24,
+  "checks": [
+    "MV3 plugin injects no cards, controls, banners, styles, scroll containers or body locks",
+    "initial native page screenshot is pixel-identical with and without the extension",
+    "refresh appends unseen posts below existing nodes, preserves exact scroll/anchor and original DOM/listeners",
+    "native text click uses same-tab detail navigation; reply, like, bookmark and repost handlers remain original",
+    "quote navigation and the fixture's original video controls remain untouched",
+    "background head refresh preserves the native store and reading anchor below the top",
+    "X's own source tabs and cached native timelines remain in control",
+    "popup disable restores true native cursors; enable reloads into seamless mode",
+    "native end-of-feed pagination automatically refreshes and appends without any plugin button",
+    "native posted notifier stays untouched and does not change the reader's nodes, scroll or anchor",
+    "user's native posted refresh settles pending pagination normally without manufacturing a Retry error",
+    "native bottom Retry recovers automatically through its original handler without scrolling to top",
+    "persistent failures retain the native error and back off rather than rapid retrying or hiding it",
+    "native recovery waits until the end, excludes tweet buttons, and pauses outside home",
+    "duplicate-only batches stay pending silently, back off without a hot loop, and obey native AbortSignal",
+    "duplicate head refresh falls back to the real native backlog cursor once",
+    "POST/XHR JSON response preserves native readyState, response headers, load and loadend callbacks",
+    "native XHR timeout cancels polling and its resulting Retry recovers automatically when fresh data becomes available",
+    "429 observes server cooldown without a page notice or repeated requests",
+    "rejected head refresh falls back to native signed pagination",
+    "outside /home, timeline responses and native pages pass through unchanged",
+    "account switches reset native dedup and ordering state",
+    "narrow screen layout remains the original renderer's responsive UI",
+    "no uncaught page errors"
+  ],
+  "fixtureOnly": true,
+  "liveXAccountTested": false,
+  "initialNativeScreenshotPixelIdentical": true
+}
